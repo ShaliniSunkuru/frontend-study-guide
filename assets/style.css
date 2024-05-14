@@ -3,13 +3,17 @@
     padding: 0;
 }
 
+main {
+    height: 560px;
+}
 header,
 footer {
     width: 100%;
-    height: 120px;
+    height: 80px;
     background-color: blue;
     color: white;
 }
+
 
 h1,
 h2 {
@@ -35,8 +39,10 @@ p {
   }
 
 .card {
-    width: 80%;
-    margin: 40px auto;
+
+    width: 20%;
+    margin: 200px 25px;
     border: 5px solid gray;
     box-shadow: 5px 10px #888888;
+    display: inline-block;
   }
