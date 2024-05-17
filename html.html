@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML5</title>
 </head>
 <body>
     <h1><abbr title="Hyper Text Markup Language">HTML</abbr></h1>
@@ -23,7 +23,7 @@
         <dt>Tags</dt>
         <dd>Tags are used to mark up content on a webpage. They define the structure and meaning of the content they enclose. For example: 
             <code>&ltp&gt</code>
-            <p><i>The tag is diplayed within the code tag by <a href="https://mateam.net/html-escape-characters/">escaping characters in HTML.</a>Note that the link is an a tag with attribute href pointing to the url.</i></p>
+            <p><i>The p tag above is diplayed within the code tag by <a href="https://mateam.net/html-escape-characters/">escaping characters in HTML.</a>Note that the link is an a tag with attribute href pointing to the url.</i></p>
         </dd>
         <dt>Elements</dt>
         <dd>The opening tag, closing tag and the content within them are together called HTML elements. <br> For example, 
@@ -53,11 +53,139 @@
     <p>Text up to now, is displayed in paragraphs using the p tag. </p>
     <p>By default, p tag displays content in new line with space between subsequent p tag content.</p>
 
-    The table below shows the important HTML elements used. 
+    The table below is created using the table tag. It shows a few HTML tags. Refer the <a href="https://www.w3schools.com/tags/">W3 schools list</a> for a full list of tags.
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Purpose</th>
+                <th>Attributes</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    !-- --
+                </td>
+                <td>
+                    Comments
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    h1 to h6
+                </td>
+                <td>
+                    Headings
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    p
+                </td>
+                <td>
+                    paragraph
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    a
+                </td>
+                <td>
+                    Link
+                </td>
+                <td>
+                    href, target(_blank for new page)
+                </td>              
+            </tr>
+            <tr>
+                <td>
+                    img
+                </td>
+                <td>
+                    image
+                </td> 
+                <td>
+                    src, alt, title
+                </td>               
+            </tr>
+            <tr>
+                <td>
+                    abbr
+                </td>
+                <td>
+                    Abbreviation
+                </td>
+                <td>
+                    title
+                </td>             
+            </tr>
+            <tr>
+                <td>
+                    dfn
+                </td>
+                <td>
+                    1st instance of a new term
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    address
+                </td>
+                <td>
+                    Contact details of website author
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    ol with several li 
+                </td>
+                <td>
+                    lists - ordered
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    ul with several li 
+                </td>
+                <td>
+                    lists - unordered
+                </td>                
+            </tr>
+
+        </tbody>
+    </table>
         
     <h2>Structural vs Semantic Markup</h2>
     <blockquote cite="https://medium.com/@jastikka.p03/structural-markup-and-semantic-markup-6451966b574d#:~:text=Structural%20markup%20is%20used%20to,the%20content%20within%20those%20structures.">Structural markup is used to define the hierarchical structure of a document, but it does not provide any information about the meaning or purpose of the content within those structures.<br> Semantic markup, on the other hand, is the use of HTML tags that convey meaning and context to the content within those structures. </blockquote>
     <p><i>&nbsp &nbsp The above definitions are within the <q>blockquote</q> tags. They are used for long quotes that take up entire paragraphs. The <q>q</q> tag on the other hand, is used for small quotes and browsers put them in double quotation marks. </i></p>
         
+    <h2>Images</h2>
+    <figure>
+        <img src="assets/images/html-tag.png" title="title for tooltip" height="300px" alt="image of html tag">
+        <figcaption>Example image in png</figcaption>
+    </figure>
+    <ul><b>Some points to consider</b>
+        <li>
+            <ul>select the right format - 
+                <li>png for flat color(large area of image filled with exacltly the same color) image like logos and diagrams</li>
+                <li>jpeg for images with multiple colors. <i>Note that images with sky, snow, etc. are actually made of different shades although they look like 1 -2 colors. So use jpeg for these.</i></li>
+            </ul>
+        </li>
+        <li>
+            Select image of right size, dimensions in pixels and not in cm or in.
+        </li>
+        <li>Provide an accurate alt attribute description. If image is only for decorative purposes, still provide alt attr with empty quotes.</li>
+    </ul>
+
+    <h2>Form</h2>
+    <p>Forms are important HTML elements that are used to collect information from users. An HTML form constitutes various form controls to gather different types of data from the user.</p>
+    <p>The name of the form control and the value entered by the visitor are sent to the server.</p>
+    <h3>Sources</h3>
+    <cite>HTML and CSS by John Duckett</cite>
+    <br>
+    <cite>w3 schools tutorial on HTML</cite>
 </body>
 </html>
