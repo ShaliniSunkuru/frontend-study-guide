@@ -53,6 +53,10 @@
     <p>Text up to now, is displayed in paragraphs using the p tag. </p>
     <p>By default, p tag displays content in new line with space between subsequent p tag content.</p>
 
+    <h3>Block level vs inline elements</h3>
+    <p>Block level elements like the p, div, h, are displayed in new line. Inline elements like span, input, img, etc. are displayed in line with content. </p>
+    <hr>
+
     The table below is created using the table tag. It shows a few HTML tags. Refer the <a href="https://www.w3schools.com/tags/">W3 schools list</a> for a full list of tags.
     
     <table>
@@ -179,10 +183,92 @@
         </li>
         <li>Provide an accurate alt attribute description. If image is only for decorative purposes, still provide alt attr with empty quotes.</li>
     </ul>
-
+    <hr>
     <h2>Form</h2>
     <p>Forms are important HTML elements that are used to collect information from users. An HTML form constitutes various form controls to gather different types of data from the user.</p>
     <p>The name of the form control and the value entered by the visitor are sent to the server.</p>
+    <p>The action attribute in an HTML form is to mention where the form is to be sent. When omitteed, form data is sent to the current page.The method attribute can take values GET, POST</p>
+    <table>
+        <thead>
+            <th>GET</th>
+            <th>POST</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Appends form-data into url in name/value pairs
+               
+                </td>
+                <td>
+                    Appends form-data inside the body of the HTTP request
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Length of url limited to 3000 characters
+                </td>
+                <td>
+                    No size limitations
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Useful for form-submissions which user wants to bookmark
+                </td>
+                <td>
+                    Cannot be bookmarked
+                </td>
+            </tr>
+            <tr>
+                <td>Never use for secure or senstive data as it will be visible in the url</td>
+                <td>
+                    Useful for secure form submissions
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Examples: query strings for search engines
+                </td>
+                <td>
+                    Exapmles: user login data
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Example Form with several form controls and field-sets</h3>
+    <form>
+        <fieldset>
+            <label>name
+                <input type="text" name="username" >
+            </label>
+            <label for="password">Password</label>
+            <input type="password" name="password" >
+        </fieldset>
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday">
+        <div>
+            <label for="skills">Skills</label>
+            <select name="skills" >
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+                <option value="React">React</option>
+                <option value="Angular">Angular</option>
+                <option value="Vue">Vue</option>
+            </select>
+        </div>
+        <div>
+            <label>Message: </label>
+            <textarea name="message" cols="60" rows="10" placeholder="This is placeholder text. Note that while form is a block level element, form controls like label, input, button are inline elements. The fieldset tag is used to group some elements together. It creates a box around them. To display form controls in new lines, wrap each in a div, a block level element. The default size of this textarea box is given by rows and cols attributes. "></textarea>
+        </div>
+
+    </form>
+    
+    <hr>
+    <p><i>To explore the HTML elements used on this page, right click, inspect and view the Elements in Chrome Developer tools. </i></p>
     <h3>Sources</h3>
     <cite>HTML and CSS by John Duckett</cite>
     <br>
