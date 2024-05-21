@@ -1,0 +1,39 @@
+.term{
+    color:green;
+}
+
+.code{
+    border: 1px solid blue;
+    padding: 5px 20px;
+    width: max-content;
+    margin:10px 0px 10px 50px;
+}
+dt{
+    font-weight: bold;
+    font-size: large;
+    color:blueviolet;
+}
+dd{
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    
+}
+h2{
+    text-align: left;
+    color:brown;
+}
+p{
+    text-align: left;
+}
+abbr{
+    text-decoration: none;
+}
+abbr:hover{
+    background-color: antiquewhite;
+}
+cite{
+    font-size: x-small;
+}
