@@ -1,19 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    color: darkblue;
 }
-
 main {
     height: 560px;
 }
+
+main a{
+    text-decoration: none;
+}
+
 header,
 footer {
     width: 100%;
-    height: 80px;
-    background-color: blue;
-    color: white;
+    height: 50px;
 }
-
 
 h1,
 h2 {
@@ -35,7 +37,6 @@ ul {
 
 p {
     text-align: center;
-    font-size: 30px;
   }
 
 .card {
