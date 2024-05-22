@@ -9,39 +9,60 @@
 </head>
 <body>
     <h1><abbr title="Cascading Style Sheets">CSS</abbr></h1>
-    <h2>What is CSS?</h2>
-    <p><i>See how different this page already looks? Here is a page styled with CSS. While HTML adds structure to webpages, it is CSS that styles it.</i></p>
-    <p>CSS allows you to create rules that specify how the content of an element should appear. CSS works by associating rules with HTML elements.<span> <cite>(HTML & CSS by John Duckett)</cite></span></p>
-    <h3>CSS Rule</h3>
-    <p>A CSS Rule has two parts: a <span class="term">selector</span> and a <span class="term">declaration</span>.</p>
-    <div class="code">
-        <code>
-            p {<br>
-                font-family: Arial;
-                <br>
-              }
-        </code>
-    </div>
-    <p>Selectors are the elements that are selected for the CSS rule to be applied to(p above). Declarations indicate how the selector should be styled(font-family: Arial;). They again comprise of a <span class="term">property</span>(font-family) and a <span class="term">value</span>(Arial).One declaration can have several property-value pairs.</p>
-    <h2>Ways to Link CSS</h2>
-    <dl>
-        <dt>Inline CSS</dt>
-        <dd>Add CSS rule directly added to HTML element using the <span class="term">style </span>attribute</dd>
-        <dt>Intenal CSS</dt>
-        <dd>Embed stylesheet directly in the head element of HTML page within the <span class="term">style </span>element</dd>
-        <dt>External CSS</dt>
-        <dd>This is best practice and is the most common method. Create a separate stylesheet which contains CSS rules and has a .css extension. Link this file in the head of HTML page using the <span class="term">link</span> element.
+    <section>
+        <input type="checkbox" id="topic1">
+        <label for="topic1">
+            <h2>What is CSS?</h2>
+        </label>
+        <div class="content">
+            <p><i>See how different this page already looks? Here is a page styled with CSS. While HTML adds structure to webpages, it is CSS that styles it.</i></p>
+            <p>CSS allows you to create rules that specify how the content of an element should appear. CSS works by associating rules with HTML elements.<span> <cite>(HTML & CSS by John Duckett)</cite></span></p>
+            <h3>CSS Rule</h3>
+            <p>A CSS Rule has two parts: a <span class="term">selector</span> and a <span class="term">declaration</span>.</p>
             <div class="code">
                 <code>
-                    &ltlink rel="stylesheet" href="url of external stylesheet" /&gt
+                    p {<br>
+                        font-family: Arial;
+                        <br>
+                    }
                 </code>
             </div>
-            The <span class="term">rel</span> attribute here, specifies how the link is related to the page.
-            An HTML page can have multiple link elements each for a separate stylesheet. 
-        </dd>
-    </dl>
-    <h2>CSS Selectors</h2>
-    <p>Most commonly used: universal (*), type, class, id, child: li &gt a</p>
+            <p>Selectors are the elements that are selected for the CSS rule to be applied to(p above). Declarations indicate how the selector should be styled(font-family: Arial;). They again comprise of a <span class="term">property</span>(font-family) and a <span class="term">value</span>(Arial).One declaration can have several property-value pairs.</p>
+        </div>
+    </section>
+    
+    <section>
+        <input type="checkbox" id="topic2">
+        <label for="topic2">
+            <h2>Ways to Link CSS</h2>
+        </label>
+        <div class="content">
+            <dl>
+                <dt>Inline CSS</dt>
+                <dd>Add CSS rule directly added to HTML element using the <span class="term">style </span>attribute</dd>
+                <dt>Intenal CSS</dt>
+                <dd>Embed stylesheet directly in the head element of HTML page within the <span class="term">style </span>element</dd>
+                <dt>External CSS</dt>
+                <dd>This is best practice and is the most common method. Create a separate stylesheet which contains CSS rules and has a .css extension. Link this file in the head of HTML page using the <span class="term">link</span> element.
+                    <div class="code">
+                        <code>
+                            &ltlink rel="stylesheet" href="url of external stylesheet" /&gt
+                        </code>
+                    </div>
+                    The <span class="term">rel</span> attribute here, specifies how the link is related to the page.
+                    An HTML page can have multiple link elements each for a separate stylesheet. 
+                </dd>
+            </dl>
+        </div>
+    </section>
+    
+    <section>
+        <input type="checkbox" id="topic3">
+        <label for="topic3">
+            <h2>CSS Selectors</h2>
+        </label>
+        <div class="content">
+            <p>Most commonly used: universal (*), type, class, id, child: li &gt a</p>
     <table>
         <thead>
             <tr>
@@ -103,11 +124,61 @@
             </tr>
         </tbody>
     </table>
+        </div>
+    </section>
+    
+    <section>
+        <input type="checkbox" id="topic4">
+        <label for="topic4">
+            <h2>Which Rule will apply?</h2>
+        </label>
+        <div class="content">
+            <h3>Cascading</h3>
+            <h3>Specificity</h3>
+            <h3>Inheritance</h3>
 
-    <h2>Which Rule will apply?</h2>
-    <h3>Cascading</h3>
-    <h3>Specificity</h3>
-    <h3>Inheritance</h3>
-   
+        </div>
+    </section>
+    
+    <section>
+        <input type="checkbox" id="topic5">
+        <label for="topic5">
+            <h2>CSS Positioning</h2>
+        </label>
+        <div class="content"></div>
+    </section>
+    
+    <section>
+        <input type="checkbox" id="topic6">
+        <label for="topic6">
+            <h2>Flexbox</h2>
+        </label>
+        <div class="content"></div>
+    </section>
+
+    <section>
+        <input type="checkbox" id="topic6">
+        <label for="topic6">
+            <h2>CSS Grid</h2>
+        </label>
+        <div class="content"></div>
+    </section>
+    
+    <br>
+    <br>
+    <hr>
+
+    <footer>
+
+        <input type="checkbox" id="topic7">
+        <label for="topic7">Example Accordion</label>
+        <div class="content">
+            <p>Trying out the accordion from <a href="https://supfort.com/pure-css-accordion-without-javascript">this</a> tutorial.</p>
+        </div>
+
+
+    </footer>
+
+    
 </body>
 </html>
