@@ -37,3 +37,16 @@ abbr:hover{
 cite{
     font-size: x-small;
 }
+th{
+    text-transform: uppercase;
+    border-top: 1px solid darkgray;
+    border-bottom: 2px solid darkgray;
+}
+.even{
+    background-color: lightgray;
+
+}
+/* row cannot be styled directly to have border. So target the cells of the table */
+tr#last td{
+    border-bottom: 1px solid darkgray;
+}

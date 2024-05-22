@@ -40,6 +40,74 @@
             An HTML page can have multiple link elements each for a separate stylesheet. 
         </dd>
     </dl>
+    <h2>CSS Selectors</h2>
+    <p>Most commonly used: universal (*), type, class, id, child: li &gt a</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Purpose</th>
+                <th>Example Syntax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Universal Selector</td>
+                <td>Targets all elements in the document</td>
+                <td>* {}</td>
+            </tr>
+            <tr class="even">
+                <td>Type Selector</td>
+                <td>Targets elements specified</td>
+                <td>h1, h2, p {}</td>
+            </tr>
+            <tr>
+                <td>Class Selector</td>
+                <td>Targets elements with class name specified</td>
+                <td>.class-name {} <br> p.class {} (all p elements with classname of class)</td>
+            </tr>
+            <tr class="even">
+                <td >ID Selector</td>
+                <td>Targets elements with id name</td>
+                <td>#id-name {}</td>
+            </tr>
+            <tr>
+                <td>Child Selector</td>
+                <td>Targets elements that are the direct children of apecified element</td>
+                <td>li&gta{}</td>
+            </tr>
+            <tr class="even">
+                <td>Descendant Selector</td>
+                <td>Targets all descendant elements of specified element( not just direct child)</td>
+                <td>p a {} (targets any a element that is inside a p element even though other elements are nested between them)</td>
+            </tr>
+            <tr >
+                <td>Adjacent Sibling Selector</td>
+                <td>Targets the next sibling of the element</td>
+                <td>h1+p {} (targets the first p after h1 and not other p s)</td>
+            </tr>
+            <tr class="even">
+                <td>General Sibling Selector</td>
+                <td>Targets siblings and not just the first one</td>
+                <td>h1~p {}</td>
+            </tr>
+            <tr id="last">
+                <td>Attribute Selector</td>
+                <td>Targets elements with existence of attribute or specific attribute value</td>
+                <td>abbr[title] (abbr element with title attribute) <br>
+                    input[type="submit"] (input with type attribute of value ' submit')<br>
+                    a[href^="http:"] (a element with href beginning with http)
+                    img[src$='png'] (img with src of value endng with png)
+                    a[href* ="/about/"] (a with href having a value that has /about/ anywhere in it)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Which Rule will apply?</h2>
+    <h3>Cascading</h3>
+    <h3>Specificity</h3>
+    <h3>Inheritance</h3>
    
 </body>
 </html>
