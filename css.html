@@ -133,10 +133,25 @@
             <h2>Which Rule will apply?</h2>
         </label>
         <div class="content">
-            <h3>Cascading</h3>
+            <h3>The Cascade</h3>
+            The Cascade is an algorithm at the heart of CSS, evident from the 'Cascading' nestled in its name itself. It is this algorithm that decides which rule has precendence when an element is targetted by multiple rules, which is very easy to happen, especially in large CSS projects. 
             <h3>Specificity</h3>
             <h3>Inheritance</h3>
-
+            <p>Some CSS properties are inherited by child elements. If an inheritable property is not set on an element, the property is set based on the value set on the parent. Some inheritable properties are color, cursor, font-family, font-size, font-weight, line-height, letter-spacing.</p>
+            <p>Some other properties are not inherited by default. For example, border, background, felxbox properties, grid properties, margin, padding. (Imagine if the border was inherited!! It would be frustrating to work with it.)</p>
+            <dl>Inheritence can be controlled using some values that can be applied to every CSS property:
+                <dl>
+                <dt>inherit</dt>
+                <dd>Sets property value to same value as parent</dd>
+                <dt>initial</dt>
+                <dd>Sets property value to initial value of that property</dd>
+                <dt>revert</dt>
+                <dd>Resets to browser's default styling</dd>
+                <dt>revert-layer</dt>
+                <dd>Resets to value in previous cascade layer</dd>
+                <dt>unset</dt>
+                <dd>resets to original value, i.e., inherit for inheritable properties and initial for non-inheritable properties</dd>
+            </dl>
         </div>
     </section>
     
